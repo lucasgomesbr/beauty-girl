@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    ;
+}
+.header{
+    grid-area: header;
+}
+@import 'Header.scss';

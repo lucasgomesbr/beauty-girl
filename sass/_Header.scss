@@ -1,0 +1,35 @@
+.header{
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.header img{
+    position: absolute;
+    min-width: 100%;
+    top: 50%;  
+    left: 50%;  
+    -webkit-transform: translate(-50%,-50%);  
+    -moz-transform: translate(-50%,-50%);  
+    -ms-transform: translate(-50%,-50%);  
+    -o-transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%); 
+    z-index: 2;
+}
+.primary-menu{
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    margin-top:12px;
+}
+.primary-menu ul li{
+    display: inline;
+    margin-left:8px;
+    margin-right:8px;
+}
+.primary-menu ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.4em;
+    color: #fff;
+}

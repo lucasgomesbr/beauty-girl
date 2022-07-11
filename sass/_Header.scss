@@ -2,7 +2,10 @@
     height: 450px;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
+
+// imagem do cabeçalho
 .header img{
     position: absolute;
     min-width: 100%;
@@ -15,21 +18,58 @@
     transform: translate(-50%,-50%); 
     z-index: 2;
 }
-.primary-menu{
+
+// nav principal
+.nav-header{
     position: relative;
     z-index: 4;
-    display: flex;
-    justify-content: center;
-    margin-top:12px;
+    margin-top:20px;
 }
-.primary-menu ul li{
-    display: inline;
-    margin-left:8px;
-    margin-right:8px;
+
+// os estilos aqui abaixo afetam todas as listas dentro da nav principal
+.nav-header ul li{
+    list-style: none;
 }
-.primary-menu ul li a{
+
+// os estilos aqui abaixo afetam a nossa ul principal
+.primary-menu{
+    position: absolute;
+    background-color: $background-secondary-color;
+    top:-20px;
+    height: 100vh;
+    padding: 15px;
+}
+
+.nav-header ul.primary-menu li{
+    margin-bottom: 12px;
+}
+
+.nav-header ul.primary-menu li a{
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     list-style: none;
-    font-size: 1.4em;
-    color: #fff;
+    font-size: 2.2em;
+    color: $text-colors-primary;
+}
+
+// os estilos aqui abaixo afetam o comportamento da logo principal
+.header .logo{
+    border: 1px solid black;
+    position: relative;
+    z-index: 8;
+    margin-left: 20px;
+}
+
+// os estilos aqui abaixo afetam o comportamento do botao hamburguer
+.nav-primary-button{
+    flex-direction: column;
+    width: 40px;
+    height: 25px;
+    margin-right: 20px;
+}
+.nav-primary-button li{
+    width: 100%;
+    height:5px;
+    background: #fff;
+    border-radius: 4px;
 }

@@ -1,7 +1,33 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+// Paleta de cores
+$background-color: #B98AAA;  // cor de fundo principal.
+$background-secondary-color: #fff; // cor secundaria de fundo.
+$text-colors-primary: #090C0D; // usado para os textos em fundo branco.
+$text-colors-secondary: #fff; // usado para definir a cor do texto em fundo rose.
+$icons-color: #B98AAA; // usado para definir cores de icones em fundo branco.
+
+// display flex e seus componentes.
+.d-flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-SB{
+    justify-content: space-between;
+}
+
+// display grid e seus componentes.
 .container{
     display: grid;
     grid-template-areas:
@@ -11,4 +37,5 @@
 .header{
     grid-area: header;
 }
-@import 'Header.scss';
+
+@import 'Header.scss'; // estilos provenientes do arquivo Header.scss

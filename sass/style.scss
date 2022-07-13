@@ -38,4 +38,8 @@ $icons-color: #B98AAA; // usado para definir cores de icones em fundo branco.
     grid-area: header;
 }
 
-@import 'Header.scss'; // estilos provenientes do arquivo Header.scss
+// header.scss apresenta estilos mobile até 768px de largura, usado para versão mobile.
+@import 'Header.scss'; 
+
+// headerMQ768.scss apresenta estilos acima de 768px de largura, para telas de desktop.
+@import 'HeaderMQ768.scss';

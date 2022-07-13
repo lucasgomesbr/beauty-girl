@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) {
+   // os estilos aqui abaixo afetam a nossa ul principal
+    .primary-menu-control{
+        left: 0px;
+    }
+    .primary-menu{
+        position: relative;
+        background-color: transparent;
+        top:10px;
+        height: 60px;
+        padding: 0px;
+        transition: 1s ease-in;
+        z-index: 10;
+        margin-top: 10px;
+    }
+    .primary-menu li{
+        display: inline;
+    }
+    .primary-menu li:not(:last-child){
+        margin-right: 6px;
+    }
+    .nav-header ul.primary-menu li a{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.7em;
+        color: $text-colors-secondary;
+    }
+    nav.nav-header{
+        align-items: center;
+        margin-top: 0px;
+    }
+    ul.primary-menu li a::after{
+        content:'';
+        width: 0%;
+    }
+    ul.primary-menu li a:hover::after{
+        content:'';
+        bottom:0;
+        left:0;
+        right:0;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $text-colors-secondary;
+        z-index: 20;
+        transition: all 1s;
+        bottom: -5px;
+    }
+
+    // os estilos aqui abaixo afetam o comportamento do botao hamburguer
+    .nav-primary-button{
+        visibility: hidden;
+    }
+}

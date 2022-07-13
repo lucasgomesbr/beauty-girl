@@ -43,7 +43,7 @@
     left: 0px;
 }
 .primary-menu-control{
-    left: -220px !important;
+    left: -220px;
 }
 
 .nav-header ul.primary-menu li{
@@ -98,7 +98,7 @@ ul.primary-menu li a:hover::after{
     height:5px;
     background: #fff;
     border-radius: 4px;
-    transition: 1s;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-primary-animation li:nth-child(1){

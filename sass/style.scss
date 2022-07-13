@@ -39,7 +39,7 @@ $icons-color: #B98AAA; // usado para definir cores de icones em fundo branco.
 }
 
 // header.scss apresenta estilos mobile até 768px de largura, usado para versão mobile.
-@import 'Header.scss'; 
+@import '_Header.scss'; 
 
 // headerMQ768.scss apresenta estilos acima de 768px de largura, para telas de desktop.
-@import 'HeaderMQ768.scss';
+@import '_HeaderMQ768.scss';

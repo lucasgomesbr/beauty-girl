@@ -6,7 +6,7 @@
 }
 
 // imagem do cabeçalho
-.header img{
+.header #header-cover{
     position: absolute;
     min-width: 100%;
     top: 50%;  
@@ -17,8 +17,13 @@
     -o-transform: translate(-50%,-50%);  
     transform: translate(-50%,-50%); 
     z-index: 2;
+    transition: all 0.7s ease-in-out;
 }
 
+.header-cover-image-effetcs{
+    filter: blur(4px);
+    opacity: 0.9;
+}
 // nav principal
 .nav-header{
     position: relative;
@@ -81,6 +86,14 @@ ul.primary-menu li a:hover::after{
     position: relative;
     z-index: 8;
     margin-left: 20px;
+}
+.nav-header .logo{
+    flex-grow: 2;
+    width: 100px;
+    min-width: 100px;
+    height: 30px;
+    min-height: 30px;
+    max-width: 105px;
 }
 
 // os estilos aqui abaixo afetam o comportamento do botao hamburguer

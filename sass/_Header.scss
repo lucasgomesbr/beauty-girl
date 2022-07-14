@@ -9,7 +9,7 @@
     position: absolute;
     min-width: 100%;
     top: 50%;  
-    left: 50%;  
+    left: 75%;  
     -webkit-transform: translate(-50%,-50%);  
     -moz-transform: translate(-50%,-50%);  
     -ms-transform: translate(-50%,-50%);  
@@ -149,17 +149,26 @@ ul.primary-menu li a:hover::after{
     margin-top: 80px;
     transition: all 0.7s ease-in-out;
 }
+.section-info h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #A4307F;
+    color: #ffe3ae;
+}
 .section-info p{
+    font-family: Arial, sans-serif;
     width: 350px;
     margin: 12px 0;
-    color:$text-colors-secondary;
-    font-size: 1em;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 1px 1px #000;
 }
 .section-info button{
-    background-color: #fff;
-    color: $icons-color;
-    font-size: 1.1em;
+    background-color: #b7778f;
+    color: #FFF;
+    font-size: 1em;
+    margin-top: 5px;
     border: none;
-    padding: 4px 10px;
-    border-radius: 3px;
+    padding: 6px 20px;
+    font-family: arial;
 }

@@ -2,7 +2,6 @@
     height: 450px;
     position: relative;
     overflow: hidden;
-    text-align: center;
 }
 
 // imagem do cabeçalho
@@ -20,7 +19,7 @@
     transition: all 0.7s ease-in-out;
 }
 
-.header-cover-image-effetcs{
+.header-cover-image-effetcs, .header-section-effects{
     filter: blur(4px);
     opacity: 0.9;
 }
@@ -46,6 +45,7 @@
     transition: 1s ease-in;
     z-index: 10;
     left: 0px;
+    text-align: center;
 }
 .primary-menu-control{
     left: -220px;
@@ -139,4 +139,27 @@ ul.primary-menu li a:hover::after{
 @keyframes hamburguerAnimation3 {
     0%   { transform: rotate(0deg); bottom: 0px;}
     100% {  transform: rotate(-40deg); bottom: 10px;}
+}
+
+// os estilos aqui controlam o comportamento da section de informação
+.section-info{
+    position: relative;
+    z-index: 3;
+    margin-left: 30px;
+    margin-top: 80px;
+    transition: all 0.7s ease-in-out;
+}
+.section-info p{
+    width: 350px;
+    margin: 12px 0;
+    color:$text-colors-secondary;
+    font-size: 1em;
+}
+.section-info button{
+    background-color: #fff;
+    color: $icons-color;
+    font-size: 1.1em;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 3px;
 }

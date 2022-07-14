@@ -6,12 +6,11 @@
     }
 
     .nav-header ul.primary-menu{
-        flex-grow: 1;
+        flex-grow: 0;
     }
 
     // os estilos aqui abaixo trabalham no comportamento da logo
     .nav-header .logo{
-        flex-grow: 2;
         margin-left: 0px;
         width: 100px;
         min-width: 100px;
@@ -23,6 +22,9 @@
    // os estilos aqui abaixo afetam a nossa ul principal
     .primary-menu-control{
         left: 0px;
+    }
+    .justify-content-changeable{
+        justify-content: space-evenly;
     }
     .primary-menu{
         position: relative;

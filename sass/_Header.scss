@@ -19,15 +19,28 @@
     transition: all 0.7s ease-in-out;
 }
 
-.header-cover-image-effetcs, .header-section-effects{
-    filter: blur(4px);
+// box transparent 
+.box-transparent-mobile-default{
+    transition: all 0.7s ease-in-out;
+    background-color: $box-transparent-mobile;
+    opacity: 0;
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    z-index: 6;
+}
+.box-transparent-mobile{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 6;
     opacity: 0.9;
+    background-color: $box-transparent-mobile;
 }
 // nav principal
 .nav-header{
     position: relative;
-    z-index: 4;
-    margin-top:20px;
+    z-index: 6;
 }
 
 // os estilos aqui abaixo afetam todas as listas dentro da nav principal
@@ -37,13 +50,12 @@
 
 // os estilos aqui abaixo afetam a nossa ul principal
 .primary-menu{
-    position: absolute;
+    position: fixed;
     background-color: $background-secondary-color;
-    top:-20px;
     height: 100vh;
     padding: 15px;
     transition: 1s ease-in;
-    z-index: 10;
+    z-index: 20;
     left: 0px;
     text-align: center;
 }
@@ -82,12 +94,11 @@ ul.primary-menu li a:hover::after{
 }
 
 // os estilos aqui abaixo afetam o comportamento da logo principal
-.header .logo{
+.nav-header .logo{
     position: relative;
     z-index: 8;
     margin-left: 20px;
-}
-.nav-header .logo{
+    margin-top: 20px;
     flex-grow: 2;
     width: 100px;
     min-width: 100px;
@@ -103,6 +114,7 @@ ul.primary-menu li a:hover::after{
     width: 40px;
     height: 25px;
     margin-right: 20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 .nav-primary-button li{
@@ -144,7 +156,7 @@ ul.primary-menu li a:hover::after{
 // os estilos aqui controlam o comportamento da section de informação
 .section-info{
     position: relative;
-    z-index: 3;
+    z-index: 4;
     margin-left: 30px;
     margin-top: 80px;
     transition: all 0.7s ease-in-out;

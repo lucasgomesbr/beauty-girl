@@ -34,7 +34,7 @@
   position: absolute;
   min-width: 100%;
   top: 50%;
-  left: 65%;
+  left: 60%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -88,7 +88,7 @@
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   list-style: none;
-  font-size: 2.0em;
+  font-size: 1.6em;
   color: #090C0D; }
 
 ul.primary-menu li a::after {
@@ -167,7 +167,9 @@ ul.primary-menu li a:hover::after {
 .section-info {
   position: relative;
   z-index: 4;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
   margin-top: 80px;
   transition: all 0.7s ease-in-out; }
 
@@ -179,8 +181,8 @@ ul.primary-menu li a:hover::after {
 
 .section-info p {
   font-family: Arial, sans-serif;
-  width: 350px;
   margin: 12px 0;
+  max-width: 350px;
   color: #fff;
   font-size: 16px;
   text-shadow: 1px 1px #000; }
@@ -241,7 +243,7 @@ ul.primary-menu li a:hover::after {
 
   .nav-header ul.primary-menu li a {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: #fff; }
 
   nav.nav-header {

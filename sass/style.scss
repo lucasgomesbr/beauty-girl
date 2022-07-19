@@ -11,35 +11,14 @@ $text-colors-secondary: #fff; // usado para definir a cor do texto em fundo rose
 $icons-color: #AC5B92; // usado para definir cores de icones em fundo branco.
 $box-transparent-mobile: #532D47; // usado para definir a cor de fundo da box que abre ao abrir o menu mobile.
 
-// display flex e seus componentes.
-.d-flex{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-.justify-content-center{
-    justify-content: center;
-}
-.align-items-center{
-    align-items: center;
-}
-.justify-content-changeable{
-    justify-content: space-between;
-}
-// display grid e seus componentes.
-.container{
-    display: grid;
-    grid-template-areas:
-    "header header header header"
-    ;
-}
-.header{
-    grid-area: header;
-}
+// _LayoutMobile.scss apresenta estilos que compoem o layout mobile.
+@import '_LayoutMobile.scss';
 
-// header.scss apresenta estilos mobile até 768px de largura, usado para versão mobile.
-@import '_Header.scss'; 
+// headerMobile.scss apresenta estilos da header para mobile.
+@import '_HeaderMobile.scss'; 
 
-// headerMQ768.scss apresenta estilos acima de 768px de largura, para telas de desktop.
-@import '_HeaderMQ768.scss';
+// _LayoutDesktop.scss apresenta estilos que compoem o layout desktop.
+@import '_LayoutDesktop.scss';
+
+// headerDesktop.scss apresenta estilos da header para desktop.
+@import '_HeaderDesktop.scss';

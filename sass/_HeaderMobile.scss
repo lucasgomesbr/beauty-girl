@@ -172,7 +172,7 @@ ul.primary-menu li a:hover::after{
 .section-info p{
     font-family: Arial, sans-serif;
     margin: 12px 0;
-    max-width: 350px;
+    max-width: 85%;
     color: #fff;
     font-size: 16px;
     text-shadow: 1px 1px #000;
@@ -186,3 +186,5 @@ ul.primary-menu li a:hover::after{
     padding: 6px 20px;
     font-family: arial;
 }
+
+// Os estilos aqui afetam a section "servicos"

@@ -1,0 +1,32 @@
+// display flex e seus componentes.
+.d-flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-changeable{
+    justify-content: space-between;
+}
+
+// Composição do layout do projeto com display grid.
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "servicos servicos servicos servicos"
+    ;
+}
+.header{
+    grid-area: header;
+}
+.servicos{
+    grid-area: servicos;
+    flex-direction: column;
+}

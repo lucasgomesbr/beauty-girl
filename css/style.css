@@ -32,20 +32,21 @@
 .header {
   height: 450px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #B98AAA; }
 
 .header #header-cover {
   position: absolute;
-  min-width: 100%;
-  top: 50%;
-  left: 60%;
+  top: 55%;
+  left: 75%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 2;
-  transition: all 0.7s ease-in-out; }
+  transition: all 0.7s ease-in-out;
+  filter: drop-shadow(-12px 11px 15px #0000009e); }
 
 .box-transparent-mobile-default {
   transition: all 0.7s ease-in-out;
@@ -206,7 +207,7 @@ ul.primary-menu li a:hover::after {
     justify-content: center; } }
 @media only screen and (min-width: 768px) {
   .header #header-cover {
-    left: 50%; }
+    left: 70%; }
 
   .nav-header {
     margin-left: 9%;

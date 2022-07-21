@@ -2,14 +2,14 @@
     height: 450px;
     position: relative;
     overflow: hidden;
+    background-color: $background-header-color;
 }
 
 // imagem do cabeçalho
 .header #header-cover{
     position: absolute;
-    min-width: 100%;
-    top: 50%;  
-    left: 60%;  
+    top: 55%;  
+    left: 75%;  
     -webkit-transform: translate(-50%,-50%);  
     -moz-transform: translate(-50%,-50%);  
     -ms-transform: translate(-50%,-50%);  
@@ -17,6 +17,7 @@
     transform: translate(-50%,-50%); 
     z-index: 2;
     transition: all 0.7s ease-in-out;
+    filter: drop-shadow(-12px 11px 15px #0000009e);
 }
 
 // box transparent 

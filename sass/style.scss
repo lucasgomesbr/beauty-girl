@@ -3,13 +3,23 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+// font definida para dar um visual bacana para o projeto
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+// Tags que irão usar a font Old standard TT
+.section-info, .section-info button{
+    font-family: 'Old Standard TT', serif;
+}
 // Paleta de cores
-$background-header-color: #B98AAA;  // cor de fundo principal do header.
+$background-header-color: linear-gradient(180deg, #b756a3, #ee90da);  // cor de fundo principal do header.
 $background-secondary-color: #fff; // cor secundaria de fundo.
 $text-colors-primary: #090C0D; // usado para os textos em fundo branco.
-$text-colors-secondary: #fff; // usado para definir a cor do texto em fundo rose.
-$icons-color: #AC5B92; // usado para definir cores de icones em fundo branco.
-$box-transparent-mobile: #532D47; // usado para definir a cor de fundo da box que abre ao abrir o menu mobile.
+$text-colors-secondary: #fff; // usado para definir a cor do texto na cor rosada.
+$linkMenu-color-mobile:#6f2a60; // definir cor do link do menu principal no mobile.
+$linkDesktop-color-desktop:#fff; // definir cor do link do menu principal no desktop.
+$icons-color: #b756a3; // usado para definir cores de icones em fundo branco.
+$box-transparent-mobile: #b756a3; // usado para definir a cor de fundo da box que abre ao abrir o menu mobile.
 
 // _LayoutMobile.scss apresenta estilos que compoem o layout mobile.
 @import '_LayoutMobile.scss';

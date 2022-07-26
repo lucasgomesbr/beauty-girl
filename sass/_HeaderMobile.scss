@@ -1,15 +1,15 @@
 .header{
-    height: 450px;
+    height: 420px;
     position: relative;
     overflow: hidden;
-    background-color: $background-header-color;
+    background-image: $background-header-color;
 }
 
 // imagem do cabeçalho
 .header #header-cover{
     position: absolute;
-    top: 55%;  
-    left: 75%;  
+    top: 53%;  
+    left: 80%;  
     -webkit-transform: translate(-50%,-50%);  
     -moz-transform: translate(-50%,-50%);  
     -ms-transform: translate(-50%,-50%);  
@@ -17,7 +17,7 @@
     transform: translate(-50%,-50%); 
     z-index: 2;
     transition: all 0.7s ease-in-out;
-    filter: drop-shadow(-12px 11px 15px #0000009e);
+    filter: drop-shadow(0px 1px 41px #ffdbf7);
 }
 
 // box transparent 
@@ -70,28 +70,17 @@
 }
 
 .nav-header ul.primary-menu li a{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Old Standard TT', serif;
     text-decoration: none;
     list-style: none;
     font-size: 1.6em;
-    color: $text-colors-primary;
+    color: $linkMenu-color-mobile;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
-ul.primary-menu li a::after{
-    content:'';
-    width: 0%;
-}
-ul.primary-menu li a:hover::after{
-    content:'';
-    bottom:0;
-    left:0;
-    right:0;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: $text-colors-primary;
-    z-index: 20;
-    transition: all 1s;
+.nav-header ul.primary-menu li a:hover, .nav-header ul.primary-menu li a:focus, .nav-header ul.primary-menu li a:active{
+    color: #b92e9d;
 }
 
 // os estilos aqui abaixo afetam o comportamento da logo principal
@@ -118,6 +107,11 @@ ul.primary-menu li a:hover::after{
     margin-top: 20px;
     cursor: pointer;
 }
+
+.nav-primary-button:hover li {
+    background: #ffc8f9;
+}
+
 .nav-primary-button li{
     position: relative;
     width: 100%;
@@ -165,13 +159,11 @@ ul.primary-menu li a:hover::after{
     transition: all 0.7s ease-in-out;
 }
 .section-info h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase;
-    text-shadow: 1px 1px #A4307F;
-    color: #ffe3ae;
+    text-shadow: 1px 1px #000;
+    color: #fff;
 }
 .section-info p{
-    font-family: Arial, sans-serif;
     margin: 12px 0;
     max-width: 85%;
     color: #fff;
@@ -179,13 +171,19 @@ ul.primary-menu li a:hover::after{
     text-shadow: 1px 1px #000;
 }
 .section-info button{
-    background-color: #b7778f;
+    background-color: #d93ab8;
     color: #FFF;
     font-size: 1em;
     margin-top: 5px;
     border: none;
     padding: 6px 20px;
-    font-family: arial;
+    border-radius: 4px;
+    cursor: pointer;
 }
-
+.section-info button:hover, .section-info button:focus{
+    background-color: #b52d98; 
+}
+ .section-info button:active{
+    background-color: #93217a;
+ }
 // Os estilos aqui afetam a section "servicos"

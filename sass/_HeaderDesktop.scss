@@ -2,6 +2,10 @@
     // os estilos aqui abaixo controlam o comportamento da capa do header
     .header #header-cover {
         left: 70%;
+        top: 46%;
+    }
+    .header {
+        height: 375px;
     }
     // os estilos aqui controlam o comportamento da nav principal
     .nav-header{
@@ -32,7 +36,7 @@
         left: 0px;
     }
     .justify-content-changeable{
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .primary-menu{
         position: relative;
@@ -52,29 +56,22 @@
     }
     .nav-header ul.primary-menu li a{
         font-family: 'Times New Roman', Times, serif;
-        font-size: 1.4em;
-        color: $text-colors-secondary;
+        font-size: 1.2em;
+        color: $linkDesktop-color-desktop;
+        text-shadow: 1px 1px #000;
+    }
+    .nav-header ul.primary-menu li a:active,  .nav-header ul.primary-menu li a:focus{
+        color: #ffb6e6;
+        border: solid 2px #ffb6e6;
+        padding: 2px 10px;
+    }
+    .nav-header ul.primary-menu li a:hover{
+        color: #ffb6e6;
+        transition: all 0.5s;
     }
     nav.nav-header{
         align-items: center;
         margin-top: 0px;
-    }
-    ul.primary-menu li a::after{
-        content:'';
-        width: 0%;
-    }
-    ul.primary-menu li a:hover::after{
-        content:'';
-        bottom:0;
-        left:0;
-        right:0;
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        background-color: $text-colors-secondary;
-        z-index: 20;
-        transition: all 1s;
-        bottom: -5px;
     }
 
     // os estilos aqui abaixo afetam o comportamento do botao hamburguer
@@ -87,20 +84,22 @@
     .section-info{
         margin-left: 10%;
         margin-right: 0px;
+        margin-top: 40px;
     }
     .section-info h2{
         font-size: 32px;
     }
     .section-info p{
         max-width: 450px;
+        font-size: 20px;
     }
     .section-info button{
-        background-color: #b7778f;
+        background-color: #d93ab8;
         color: #FFF;
         font-size: 1em;
         margin-top: 5px;
         border: none;
         padding: 6px 20px;
-        font-family: arial;
+        border-radius: 4px;
     }
 }

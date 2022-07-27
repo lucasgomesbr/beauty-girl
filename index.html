@@ -12,13 +12,16 @@
         <!-- a div abaixo aplica o efeito de escurecimento da tela ao abrir o menu hamburguer -->
         <div id="the-box-mobile" class="box-transparent-mobile-default"></div>
         <header class="header">
-            <!-- Imagem do cabeçalho -->
-            <img id="header-cover" class="" src="assets/header1model.png"/>
+            <!-- Imagem do cabeçalho, tag picture oferecendo suporte para webp e png -->
+            <picture>
+                <source srcset="assets/header1model.webp" type="image/webp">
+                <img id="header-cover" src="assets/header1model.png" alt="My default image"  type="image/png">
+            </picture>
             <nav class="nav-header d-flex justify-content-changeable">
                 <img src="assets/logo.png" class="logo"></img>
                 <!-- Menu principal -->
                 <ul class="primary-menu primary-menu-control">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Profissionais</a></li>
                     <li><a href="#">Sobre</a></li>

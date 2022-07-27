@@ -177,19 +177,22 @@
 .section-info h2 {
   text-transform: uppercase;
   text-shadow: 1px 1px #000;
-  color: #fff; }
+  color: #fff;
+  font-size: 1.4em; }
 
 .section-info p {
   margin: 12px 0;
   max-width: 85%;
   color: #fff;
   font-size: 16px;
+  font-weight: 600;
   text-shadow: 1px 1px #000; }
 
 .section-info button {
   background-color: #d93ab8;
   color: #FFF;
   font-size: 1em;
+  font-weight: 600;
   margin-top: 5px;
   border: none;
   padding: 6px 20px;
@@ -207,7 +210,7 @@
     flex-direction: row;
     justify-content: center; } }
 @media only screen and (min-width: 768px) {
-  .header #header-cover {
+  .header picture source, .header picture #header-cover {
     left: 70%;
     top: 46%; }
 
@@ -256,10 +259,10 @@
     margin-right: 6px; }
 
   .nav-header ul.primary-menu li a {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
     color: #fff;
-    text-shadow: 1px 1px #000; }
+    text-shadow: 1px 1px #000;
+    letter-spacing: 0px; }
 
   .nav-header ul.primary-menu li a:active, .nav-header ul.primary-menu li a:focus {
     color: #ffb6e6;
@@ -284,10 +287,10 @@
     margin-top: 40px; }
 
   .section-info h2 {
-    font-size: 32px; }
+    font-size: 1.7em; }
 
   .section-info p {
-    max-width: 450px;
+    max-width: 520px;
     font-size: 20px; }
 
   .section-info button {

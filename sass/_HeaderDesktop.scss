@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
     // os estilos aqui abaixo controlam o comportamento da capa do header
     .header picture source,  .header picture #header-cover {
-        left: 70%;
+        left: 80%;
         top: 46%;
     }
     .header {
@@ -87,19 +87,26 @@
         margin-top: 40px;
     }
     .section-info h2{
-        font-size: 1.7em;
+        font-size: 1.9em;
     }
     .section-info p{
         max-width: 520px;
-        font-size: 20px;
+        font-size: 19px;
     }
     .section-info button{
-        background-color: #d93ab8;
+        background-color: #390e33;
         color: #FFF;
-        font-size: 1em;
+        font-size: 1.1em;
         margin-top: 5px;
         border: none;
         padding: 6px 20px;
         border-radius: 4px;
     }
+}
+
+@media only screen and (min-width: 997px) {
+        // os estilos aqui abaixo controlam o comportamento da capa do header
+        .header picture source,  .header picture #header-cover {
+            left: 70%;
+        }
 }

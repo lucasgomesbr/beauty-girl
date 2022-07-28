@@ -37,12 +37,12 @@
   height: 420px;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(180deg, #b756a3, #ee90da); }
+  background-image: linear-gradient(180deg, #d06cbc, #ffebfb); }
 
 .header #header-cover {
   position: absolute;
   top: 53%;
-  left: 80%;
+  left: 83%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -176,23 +176,21 @@
 
 .section-info h2 {
   text-transform: uppercase;
-  text-shadow: 1px 1px #000;
-  color: #fff;
+  text-shadow: 1px 1px #e6a5dc;
+  color: #390e33;
   font-size: 1.4em; }
 
 .section-info p {
   margin: 12px 0;
-  max-width: 85%;
-  color: #fff;
+  max-width: 80%;
+  color: #390e33;
   font-size: 16px;
-  font-weight: 600;
-  text-shadow: 1px 1px #000; }
+  font-weight: 600; }
 
 .section-info button {
-  background-color: #d93ab8;
+  background-color: #390e33;
   color: #FFF;
   font-size: 1em;
-  font-weight: 600;
   margin-top: 5px;
   border: none;
   padding: 6px 20px;
@@ -211,7 +209,7 @@
     justify-content: center; } }
 @media only screen and (min-width: 768px) {
   .header picture source, .header picture #header-cover {
-    left: 70%;
+    left: 80%;
     top: 46%; }
 
   .header {
@@ -287,19 +285,22 @@
     margin-top: 40px; }
 
   .section-info h2 {
-    font-size: 1.7em; }
+    font-size: 1.9em; }
 
   .section-info p {
     max-width: 520px;
-    font-size: 20px; }
+    font-size: 19px; }
 
   .section-info button {
-    background-color: #d93ab8;
+    background-color: #390e33;
     color: #FFF;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-top: 5px;
     border: none;
     padding: 6px 20px;
     border-radius: 4px; } }
+@media only screen and (min-width: 997px) {
+  .header picture source, .header picture #header-cover {
+    left: 70%; } }
 
 /*# sourceMappingURL=style.css.map */

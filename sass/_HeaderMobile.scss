@@ -9,7 +9,7 @@
 .header #header-cover{
     position: absolute;
     top: 53%;  
-    left: 80%;  
+    left: 83%;  
     -webkit-transform: translate(-50%,-50%);  
     -moz-transform: translate(-50%,-50%);  
     -ms-transform: translate(-50%,-50%);  
@@ -160,23 +160,21 @@
 }
 .section-info h2{
     text-transform: uppercase;
-    text-shadow: 1px 1px #000;
-    color: #fff;
+    text-shadow: 1px 1px #e6a5dc;
+    color: #390e33;
     font-size: 1.4em;
 }
 .section-info p{
     margin: 12px 0;
-    max-width: 85%;
-    color: #fff;
+    max-width: 80%;
+    color: #390e33;
     font-size: 16px;
     font-weight: 600;
-    text-shadow: 1px 1px #000;
 }
 .section-info button{
-    background-color: #d93ab8;
+    background-color: #390e33;
     color: #FFF;
     font-size: 1em;
-    font-weight: 600;
     margin-top: 5px;
     border: none;
     padding: 6px 20px;

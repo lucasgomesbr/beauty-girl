@@ -1,6 +1,7 @@
 @media only screen and (min-width: 768px) {
     // os estilos aqui abaixo controlam o comportamento da capa do header
     .header picture source,  .header picture #header-cover {
+        display: block;
         left: 90%;
         top: 50%;
     }

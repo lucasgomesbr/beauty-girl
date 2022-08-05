@@ -39,6 +39,7 @@
   background-image: linear-gradient(180deg, #d06cbc, #ffebfb); }
 
 .header #header-cover {
+  display: none;
   position: absolute;
   top: 55%;
   left: 100%;
@@ -212,6 +213,7 @@
     justify-content: center; } }
 @media only screen and (min-width: 768px) {
   .header picture source, .header picture #header-cover {
+    display: block;
     left: 90%;
     top: 50%; }
 

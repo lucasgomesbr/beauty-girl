@@ -92,12 +92,14 @@
     margin-left: 20px;
     margin-top: 20px;
     max-width: 140px;
+    height: 35px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }
 
 .nav-header .logo source, .nav-header .logo img{
     max-width: 100%;
+    max-height: 100%;
 }
 // os estilos aqui abaixo afetam o comportamento do botao hamburguer
 .nav-primary-button{

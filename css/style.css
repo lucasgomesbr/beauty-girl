@@ -40,8 +40,8 @@
 
 .header #header-cover {
   position: absolute;
-  top: 53%;
-  left: 83%;
+  top: 55%;
+  left: 100%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -212,8 +212,8 @@
     justify-content: center; } }
 @media only screen and (min-width: 768px) {
   .header picture source, .header picture #header-cover {
-    left: 80%;
-    top: 46%; }
+    left: 90%;
+    top: 50%; }
 
   .header {
     height: 375px; }
@@ -298,6 +298,6 @@
     border-radius: 4px; } }
 @media only screen and (min-width: 997px) {
   .header picture source, .header picture #header-cover {
-    left: 70%; } }
+    left: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

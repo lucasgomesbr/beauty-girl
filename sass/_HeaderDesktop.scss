@@ -1,8 +1,8 @@
 @media only screen and (min-width: 768px) {
     // os estilos aqui abaixo controlam o comportamento da capa do header
     .header picture source,  .header picture #header-cover {
-        left: 80%;
-        top: 46%;
+        left: 90%;
+        top: 50%;
     }
     .header {
         height: 375px;
@@ -101,6 +101,6 @@
 @media only screen and (min-width: 997px) {
         // os estilos aqui abaixo controlam o comportamento da capa do header
         .header picture source,  .header picture #header-cover {
-            left: 70%;
+            left: 80%;
         }
 }

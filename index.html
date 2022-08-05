@@ -18,14 +18,18 @@
                 <img id="header-cover" src="assets/header1model.png" alt="mulher de foto da capa do cabeçalho"  type="image/png">
             </picture>
             <nav class="nav-header d-flex justify-content-changeable">
-                <img src="assets/logo.png" class="logo" alt="Logo do site, o nome da logo é BeautyGirl!">
+                <!-- Imagem da logo, tag picture oferecendo suporte para webp e png -->
+                <picture class="logo">
+                    <source srcset="assets/logo.webp" type="image/webp">
+                    <img src="assets/logo.png" alt="logo do site"  type="image/png">
+                </picture>
                 <!-- Menu principal -->
                 <ul class="primary-menu primary-menu-control">
-                    <li><a tabindex="0" href="#home">Inicio</a></li>
-                    <li><a tabindex="0" href="#">Serviços</a></li>
-                    <li><a tabindex="0" href="#">Profissionais</a></li>
-                    <li><a tabindex="0" href="#">Sobre</a></li>
-                    <li><a tabindex="0" href="#">Contato</a></li>
+                    <li><a class="itemMenu" tabindex="0" href="#home">Inicio</a></li>
+                    <li><a class="itemMenu" tabindex="0" href="#servicos">Serviços</a></li>
+                    <li><a class="itemMenu" tabindex="0" href="#profissionais">Profissionais</a></li>
+                    <li><a class="itemMenu" tabindex="0" href="#sobre">Sobre</a></li>
+                    <li><a class="itemMenu" tabindex="0" href="#contato">Contato</a></li>
                 </ul>
                 <!-- Menu hamburguer -->
                 <ul class="nav-primary-button d-flex justify-content-changeable">

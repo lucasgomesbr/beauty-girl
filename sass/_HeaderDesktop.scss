@@ -9,8 +9,8 @@
     }
     // os estilos aqui controlam o comportamento da nav principal
     .nav-header{
-        margin-left: 9%;
-        margin-right: 9%;
+        margin-left: 7%;
+        margin-right: 7%;
     }
 
     .nav-header ul.primary-menu{
@@ -23,12 +23,6 @@
         z-index: 8;
         margin-left: 0px;
         margin-top: 0px;
-        flex-grow: 2;
-        width: 100px;
-        min-width: 100px;
-        height: 30px;
-        min-height: 30px;
-        max-width: 105px;
     }
 
    // os estilos aqui abaixo afetam a nossa ul principal
@@ -52,17 +46,18 @@
         display: inline;
     }
     .primary-menu li:not(:last-child){
-        margin-right: 6px;
+        margin-right: 1px;
     }
     .nav-header ul.primary-menu li a{
         font-size: 1.2em;
         color: $linkDesktop-color-desktop;
         letter-spacing: 0px;
+        padding: 1px 7px;
+        border: solid 1px transparent;
     }
-    .nav-header ul.primary-menu li a:target,  .nav-header ul.primary-menu li a:focus{
-        color: #4f1e48;
-        border: solid 1px #5b2c55;
-        padding: 2px 12px;
+    .menuDesktopClicked{
+        color: #4f1e48 !important;
+        border: solid 1px #5b2c55 !important;
     }
     .nav-header ul.primary-menu li a:hover{
         color: #4f1e48;

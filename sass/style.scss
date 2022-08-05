@@ -11,6 +11,24 @@
 .section-info, .section-info button{
     font-family: 'Old Standard TT', serif;
 }
+
+// display flex e seus componentes.
+.d-flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-changeable{
+    justify-content: space-between;
+}
+
 // Paleta de cores
 $background-header-color: linear-gradient(180deg, #d06cbc, #ffebfb);  // cor de fundo principal do header.
 $background-secondary-color: #fff; // cor secundaria de fundo.

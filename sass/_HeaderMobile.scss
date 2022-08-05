@@ -18,6 +18,8 @@
     z-index: 2;
     transition: all 0.7s ease-in-out;
     filter: drop-shadow(0px 1px 41px #ffdbf7);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 // box transparent 
@@ -89,14 +91,14 @@
     z-index: 8;
     margin-left: 20px;
     margin-top: 20px;
-    flex-grow: 2;
-    width: 100px;
-    min-width: 100px;
-    height: 30px;
-    min-height: 30px;
-    max-width: 105px;
+    max-width: 140px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
+.nav-header .logo source, .nav-header .logo img{
+    max-width: 100%;
+}
 // os estilos aqui abaixo afetam o comportamento do botao hamburguer
 .nav-primary-button{
     position: relative;

@@ -231,7 +231,8 @@
     position: relative;
     z-index: 8;
     margin-left: 0px;
-    margin-top: 0px; }
+    margin-top: 0px;
+    image-rendering: initial; }
 
   .primary-menu-control {
     left: 0px; }

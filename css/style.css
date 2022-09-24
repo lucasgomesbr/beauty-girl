@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box; }
 
-.section-info, .section-info button {
+.section-info, .section-info button, .servicos-title {
   font-family: 'Old Standard TT', serif; }
 
 .d-flex {
@@ -21,12 +21,25 @@
 .justify-content-changeable {
   justify-content: space-between; }
 
+.d-block {
+  display: block; }
+
+.text-center {
+  text-align: center; }
+
+.margin-vertical {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 .container {
   display: grid;
-  grid-template-areas: "header header header header" "servicos servicos servicos servicos"; }
+  grid-template-areas: "header header header header" "servicosTitle servicosTitle servicosTitle servicosTitle" "servicos servicos servicos servicos"; }
 
 .header {
   grid-area: header; }
+
+.servicos-title {
+  grid-area: servicosTitle; }
 
 .servicos {
   grid-area: servicos;
@@ -207,10 +220,9 @@
 .section-info button:active {
   background-color: #642b5c; }
 
-@media only screen and (min-width: 768px) {
-  .servicos {
-    flex-direction: row;
-    justify-content: center; } }
+.servicos-title {
+  color: #090C0D; }
+
 @media only screen and (min-width: 768px) {
   .header picture source, .header picture #header-cover {
     display: block;
@@ -298,7 +310,11 @@
     margin-top: 5px;
     border: none;
     padding: 6px 20px;
-    border-radius: 4px; } }
+    border-radius: 4px; }
+
+  .servicos {
+    flex-direction: row;
+    justify-content: center; } }
 @media only screen and (min-width: 997px) {
   .header picture source, .header picture #header-cover {
     left: 80%; } }

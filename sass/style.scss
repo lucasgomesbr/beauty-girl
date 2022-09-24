@@ -5,7 +5,7 @@
 }
 
 // Tags que irão usar a font Old standard TT
-.section-info, .section-info button{
+.section-info, .section-info button, .servicos-title{
     font-family: 'Old Standard TT', serif;
 }
 
@@ -36,14 +36,43 @@ $linkDesktop-color-desktop:#fff; // definir cor do link do menu principal no des
 $icons-color: #b756a3; // usado para definir cores de icones em fundo branco.
 $box-transparent-mobile: #b756a3; // usado para definir a cor de fundo da box que abre ao abrir o menu mobile.
 
+// CSS Multi-uso
+.d-block{
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.margin-vertical{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 // _LayoutMobile.scss apresenta estilos que compoem o layout mobile.
 @import '_LayoutMobile.scss';
 
 // headerMobile.scss apresenta estilos da header para mobile.
 @import '_HeaderMobile.scss'; 
 
-// _LayoutDesktop.scss apresenta estilos que compoem o layout desktop.
-@import '_LayoutDesktop.scss';
+// _ServicosMobile.scss apresenta estilos que compoem a area serviços no mobile.
+@import '_ServicosMobile.scss';
 
-// headerDesktop.scss apresenta estilos da header para desktop.
-@import '_HeaderDesktop.scss';
+// Todos os estilos scss dentro da media-query afetaram o estilo para desktop.
+@media only screen and (min-width: 768px) {
+    // _LayoutDesktop.scss apresenta estilos que compoem o layout desktop.
+    @import '_LayoutDesktop.scss';
+
+    // headerDesktop.scss apresenta estilos da header para desktop.
+    @import '_HeaderDesktop.scss';
+
+    // _ServicosDesktop.scss apresenta estilos que compoem a area serviços no desktop.
+    @import '_ServicosDesktop.scss';
+}
+
+// ajustes extras
+@media only screen and (min-width: 997px) {
+    // os estilos aqui abaixo controlam o comportamento da capa do header para telas maiores.
+    .header picture source,  .header picture #header-cover {
+        left: 80%;
+    }
+}

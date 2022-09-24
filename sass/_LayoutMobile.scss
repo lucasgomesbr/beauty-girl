@@ -3,11 +3,15 @@
     display: grid;
     grid-template-areas:
     "header header header header"
+    "servicosTitle servicosTitle servicosTitle servicosTitle"
     "servicos servicos servicos servicos"
     ;
 }
 .header{
     grid-area: header;
+}
+.servicos-title{
+    grid-area: servicosTitle;
 }
 .servicos{
     grid-area: servicos;

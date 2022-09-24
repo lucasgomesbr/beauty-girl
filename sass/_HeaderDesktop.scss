@@ -1,4 +1,3 @@
-@media only screen and (min-width: 768px) {
     // os estilos aqui abaixo controlam o comportamento da capa do header
     .header picture source,  .header picture #header-cover {
         display: block;
@@ -98,11 +97,3 @@
         padding: 6px 20px;
         border-radius: 4px;
     }
-}
-
-@media only screen and (min-width: 997px) {
-        // os estilos aqui abaixo controlam o comportamento da capa do header
-        .header picture source,  .header picture #header-cover {
-            left: 80%;
-        }
-}
